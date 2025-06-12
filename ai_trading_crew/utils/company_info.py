@@ -20,4 +20,4 @@ def get_company_name(symbol: str, exchange: str = "NASDAQ") -> str:
     try:
         return twelve_data_manager.get_company_name(symbol)
     except Exception:
-        return symbol
+        return symbol 

@@ -16,7 +16,7 @@ warnings.filterwarnings(
 
 
 # Valid LLM providers
-VALID_PROVIDERS = ["OPENROUTER", "TOGETHERAI"]
+VALID_PROVIDERS = ["OPENROUTER"]
 
 BASE_SYMBOLS = ["AAPL", "NVDA", "MSFT", "AMZN", "GLD", "GOOGL", "TSLA"]
 
@@ -144,16 +144,12 @@ def extract_provider_name(model_name: str) -> str:
     raise ValueError(f"Model name '{model_name}' does not start with a valid provider: {', '.join(VALID_PROVIDERS)}")
 
 
-#TogetherAI has a context window much smaller than OpenRouter. This is is why we use OpenRouter here for
-#technical indicators and stocktwits. It also generates error much more often
-#For Serper, we need to use TogetherAI as it needs to be multimodal which OpenRouter (Gemini) is not
+#OpenRouter DeepSeek R1 is used for all LLM operations in the system
 
 DEFAULT_PROJECT_LLM = "OPENROUTER_DEEPSEEK_R1"
 DEFAULT_STOCKTWITS_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
 DEFAULT_TI_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
-GEMINI_20_OPENROUTER_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_GEMINI_20", "OPENROUTER_BASE_URL")
 DEEPSEEK_OPENROUTER_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
-DEEPSEEK_TOGETHERAI_LLM = create_default_llm("TOGETHERAI_API_KEY", "TOGETHERAI_DEEPSEEK_R1", "TOGETHERAI_BASE_URL")
 
 
 OUTPUT_FOLDER = "test_files"

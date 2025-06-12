@@ -2,7 +2,7 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 import os
 import yaml
-from ai_trading_crew.config import settings, DEFAULT_STOCKTWITS_LLM, PROJECT_LLM, DEFAULT_TI_LLM, DEEPSEEK_OPENROUTER_LLM, DEEPSEEK_TOGETHERAI_LLM, AGENT_OUTPUTS_FOLDER, AGENT_INPUTS_FOLDER, RELEVANT_ARTICLES_FILE, LOG_FOLDER
+from ai_trading_crew.config import settings, DEFAULT_STOCKTWITS_LLM, PROJECT_LLM, DEFAULT_TI_LLM, DEEPSEEK_OPENROUTER_LLM, AGENT_OUTPUTS_FOLDER, AGENT_INPUTS_FOLDER, RELEVANT_ARTICLES_FILE, LOG_FOLDER
 from ai_trading_crew.utils.dates import get_today_str, get_yesterday_str, get_today_str_no_min
 import inspect
 

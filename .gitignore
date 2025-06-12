@@ -69,3 +69,4 @@ db/
 .cursorignore
 fin_agent/
 mcp-servers/
+resources/

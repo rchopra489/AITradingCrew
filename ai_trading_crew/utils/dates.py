@@ -23,4 +23,4 @@ def get_yesterday_18_est() -> datetime.datetime:
     est = pytz.timezone('US/Eastern')
     yesterday_date = get_current_est_date() - timedelta(days=1)
     yesterday_18 = datetime.datetime.combine(yesterday_date, datetime.time(18, 0, 0))
-    return est.localize(yesterday_18)
+    return est.localize(yesterday_18) 

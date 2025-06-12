@@ -11,7 +11,6 @@ from ai_trading_crew.analysts.market_overview import HistoricalMarketFetcher
 from ai_trading_crew.market_overview_agents import MarketOverviewAnalyst
 from ai_trading_crew.stock_processor import process_stock_symbol_sync as process_stock_symbol, process_stock_symbol as process_stock_symbol_async
 from ai_trading_crew.crew import StockComponentsSummarizeCrew
-from ai_trading_crew.utils.audio import play_mario_theme
 from ai_trading_crew.analysts.timegpt import get_timegpt_forecast
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
