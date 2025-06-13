@@ -3,7 +3,7 @@
 
 *Photo by Igor Omilaev on Unsplash*
 
-# AI Trading Crew 🤖📈
+# AI Trading Crew 🤖
 
 ## Tired of Spending 2 Hours Daily on Stock Market Research? Use This Agentic AI System Instead
 
