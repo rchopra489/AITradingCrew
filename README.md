@@ -30,7 +30,7 @@ This AI trading crew automates the entire daily stock research process using a t
 
 ### 🚀 Want to See This System in Action?
 
-For a deep dive into how this Agentic AI system works in practice and to see a real-world example of the analysis in action, check out my detailed [hands-on demonstration and implementation guide](https://ostiguyphilippe.medium.com/d53bbc54075f). This article walks through the complete process and shows you exactly how the AI agents collaborate to generate trading insights.
+For a deep dive into how this AI agent system works in practice and to see a real-world example of the analysis in action, check out my detailed [hands-on demonstration and implementation guide](https://ostiguyphilippe.medium.com/d53bbc54075f). This article walks through the complete process and shows you exactly how the AI agents collaborate to generate trading insights.
 
 
 ---
@@ -54,7 +54,7 @@ The system follows a sophisticated three-phase approach:
 6. **🎯 Day Trader Advisor Agent**: Synthesizes all data into actionable trading signals
 
 ### Phase 3: ⚡ Asynchronous Processing
-Multiple stocks analyzed simultaneously for maximum efficiency - while one agent fetches Apple's news, another analyzes NVIDIA's technicals, and a third processes Tesla's sentiment.
+Multiple stocks are analyzed simultaneously for maximum efficiency - while one agent fetches Apple's news, another analyzes NVIDIA's technicals, and a third processes Tesla's sentiment.
 
 ---
 
