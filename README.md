@@ -32,7 +32,9 @@ This AI trading crew automates the entire daily stock research process using a t
 
 For a deep dive into how this Agentic AI system works in practice and to see a real-world example of the analysis in action, check out my detailed [hands-on demonstration and implementation guide](https://ostiguyphilippe.medium.com/d53bbc54075f). This article walks through the complete process and shows you exactly how the AI agents collaborate to generate trading insights.
 
+
 ---
+
 
 ## 🏗️ Architecture: How AI Agents Collaborate
 
