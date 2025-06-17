@@ -53,9 +53,6 @@ The system follows a sophisticated three-phase approach:
 5. **🔍 Fundamental Analysis Agent**: Financial health, valuation metrics, analyst opinions
 6. **🎯 Day Trader Advisor Agent**: Synthesizes all data into actionable trading signals
 
-### Phase 3: ⚡ Asynchronous Processing
-Multiple stocks are analyzed simultaneously for maximum efficiency - while one agent fetches Apple's news, another analyzes NVIDIA's technicals, and a third processes Tesla's sentiment.
-
 ---
 
 ## 🚀 Installation & Setup
