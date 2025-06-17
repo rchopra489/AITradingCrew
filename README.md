@@ -108,7 +108,7 @@ TIMEGPT_API_KEY=your_nixtla_api_key_here
 RAPID_API_KEY=your_rapidapi_key_here
 ```
 
-### 🔑 How to Get API Keys:
+### 🔑 How to Get API Keys (All Have Free Tiers):
 
 1. **OpenRouter** (Free LLMs): [openrouter.ai](https://openrouter.ai) - Get free access to DeepSeek R1
 2. **TwelveData** (Financial Data): [twelvedata.com](https://twelvedata.com) - Free tier available
