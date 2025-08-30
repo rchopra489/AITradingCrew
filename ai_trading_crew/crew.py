@@ -2,7 +2,17 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 import os
 import yaml
-from ai_trading_crew.config import settings, DEFAULT_STOCKTWITS_LLM, PROJECT_LLM, DEFAULT_TI_LLM, DEEPSEEK_OPENROUTER_LLM, AGENT_OUTPUTS_FOLDER, AGENT_INPUTS_FOLDER, RELEVANT_ARTICLES_FILE, LOG_FOLDER
+from ai_trading_crew.config import (
+    settings,
+    DEFAULT_STOCKTWITS_LLM,
+    PROJECT_LLM,
+    DEFAULT_TI_LLM,
+    OPENAI_GPT_5_MINI_LLM,
+    AGENT_OUTPUTS_FOLDER,
+    AGENT_INPUTS_FOLDER,
+    RELEVANT_ARTICLES_FILE,
+    LOG_FOLDER,
+)
 from ai_trading_crew.utils.dates import get_today_str, get_yesterday_str, get_today_str_no_min
 import inspect
 
@@ -48,7 +58,7 @@ class AiArticlesPickerCrew(BaseCrewClass):
 		return Agent(
 			config=self.agents_config['relevant_news_filter_agent'],
 			verbose=True,
-			llm=DEEPSEEK_OPENROUTER_LLM
+                        llm=OPENAI_GPT_5_MINI_LLM
 		)
 
 	@task  # UN-commented but kept inactive through crew configuration
@@ -90,7 +100,7 @@ class StockComponentsSummarizeCrew(BaseCrewClass):
 		return Agent(
 			config=self.agents_config['news_summarizer_agent'],
 			verbose=True,
-			llm=DEEPSEEK_OPENROUTER_LLM
+                        llm=OPENAI_GPT_5_MINI_LLM
 		)
 
 	@agent  # UN-commented but kept inactive through crew configuration
@@ -228,7 +238,7 @@ class DayTraderAdvisorCrew:
 		return Agent(
 			config=self.agents_config['day_trader_advisor_agent'],
 			verbose=True,
-			llm=DEEPSEEK_OPENROUTER_LLM
+                        llm=OPENAI_GPT_5_MINI_LLM
 		)
 
 	def day_trader_recommendation_task(self) -> Task:
