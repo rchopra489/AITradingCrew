@@ -97,10 +97,10 @@ pip install -e .
 Create a `.env` file in the project root with the following API keys:
 
 ```bash
-# LLM Provider (OpenRouter recommended)
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-OPENROUTER_DEEPSEEK_R1=deepseek/deepseek-r1:free
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+# LLM Provider (OpenAI GPT-5 mini)
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_GPT_5_MINI=gpt-5-mini
+OPENAI_BASE_URL=https://api.openai.com/v1
 
 # Data Providers
 TWELVE_API_KEY=your_twelvedata_api_key_here
@@ -110,7 +110,7 @@ RAPID_API_KEY=your_rapidapi_key_here
 
 ### 🔑 How to Get API Keys (All Have Free Tiers):
 
-1. **OpenRouter** (Free LLMs): [openrouter.ai](https://openrouter.ai) - Get free access to DeepSeek R1
+1. **OpenAI** (GPT-5 mini): [openai.com](https://platform.openai.com)
 2. **TwelveData** (Financial Data): [twelvedata.com](https://twelvedata.com) - Free tier available
 3. **Nixtla TimeGPT** (Forecasting): [nixtla.io](https://nixtla.io) - AI forecasting API
 4. **RapidAPI** (Social Data): [rapidapi.com](https://rapidapi.com) - For StockTwits sentiment data

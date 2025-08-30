@@ -16,7 +16,7 @@ warnings.filterwarnings(
 
 
 # Valid LLM providers
-VALID_PROVIDERS = ["OPENROUTER"]
+VALID_PROVIDERS = ["OPENROUTER", "OPENAI"]
 
 BASE_SYMBOLS = ["AAPL", "NVDA", "MSFT", "AMZN", "GLD", "GOOGL", "TSLA"]
 
@@ -144,12 +144,12 @@ def extract_provider_name(model_name: str) -> str:
     raise ValueError(f"Model name '{model_name}' does not start with a valid provider: {', '.join(VALID_PROVIDERS)}")
 
 
-#OpenRouter DeepSeek R1 is used for all LLM operations in the system
+# OpenAI GPT-5 mini is used for all LLM operations in the system
 
-DEFAULT_PROJECT_LLM = "OPENROUTER_DEEPSEEK_R1"
-DEFAULT_STOCKTWITS_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
-DEFAULT_TI_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
-DEEPSEEK_OPENROUTER_LLM = create_default_llm("OPENROUTER_API_KEY", "OPENROUTER_DEEPSEEK_R1", "OPENROUTER_BASE_URL")
+DEFAULT_PROJECT_LLM = "OPENAI_GPT_5_MINI"
+DEFAULT_STOCKTWITS_LLM = create_default_llm("OPENAI_API_KEY", "OPENAI_GPT_5_MINI", "OPENAI_BASE_URL")
+DEFAULT_TI_LLM = create_default_llm("OPENAI_API_KEY", "OPENAI_GPT_5_MINI", "OPENAI_BASE_URL")
+OPENAI_GPT_5_MINI_LLM = create_default_llm("OPENAI_API_KEY", "OPENAI_GPT_5_MINI", "OPENAI_BASE_URL")
 
 
 OUTPUT_FOLDER  = "output"
